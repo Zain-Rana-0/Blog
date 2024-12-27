@@ -6,18 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", (event) => {
       event.preventDefault();
 
-      // Remove active class from all buttons
       filterButtons.forEach((btn) => btn.classList.remove("active"));
       button.classList.add("active");
 
       const category = button.dataset.category;
 
-      // Hide all categories first
       blogCategories.forEach((cat) => {
         cat.style.display = "none";
       });
 
-      // Show selected category
       if (category === "all") {
         blogCategories.forEach((cat) => {
           cat.style.display = "block";
@@ -31,30 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
-  // Show all categories by default
   blogCategories.forEach((cat) => {
     cat.style.display = "block";
   });
 
-  // ...existing code...
 });
 
-const backToTopBtn = document.getElementById("back-to-top");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
-    backToTopBtn.style.display = "flex";
-  } else {
-    backToTopBtn.style.display = "none";
-  }
-});
-
-backToTopBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
 
 const contactForm = document.getElementById("contact-form");
 const formMessage = document.getElementById("form-message");
