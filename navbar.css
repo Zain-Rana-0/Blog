@@ -1,0 +1,91 @@
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    padding: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin-left: 20px;
+    background-color: var(--secondary-color);
+  }
+  .logo{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform var(--transition);
+  }
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+.web-name {
+    color: white;
+    font-size: 1.02rem;
+    font-weight: bold;
+    margin-left: 10px;
+    position: relative; /* Add this to position the ::after element correctly */
+}
+
+.web-name::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: width var(--transition);
+}
+
+.web-name:hover::after {
+    width: 100%;
+}
+
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color var(--transition);
+    position: relative;
+  }
+  
+  .navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: width var(--transition);
+  }
+  
+  .navbar a:hover::after {
+    width: 100%;
+  }
