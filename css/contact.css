@@ -1,0 +1,8 @@
+#contact-form {
+  display: grid;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+

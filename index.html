@@ -16,23 +16,26 @@
   <body>
     <nav class="navbar">
       <div class="icon-container">
-        <img class="logo" src="/favicon.png" alt="Blog Logo" />
-        <h5 class="web-name" href="#home">PassionList</h5>
+        <img class="logo"  src="/favicon.png" alt="Blog Logo" />
+        <h5 class="web-name"href="#blogs">PassionList</h5>
       </div>
       <div class="container">
         <ul>
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#blogs" class="nav-link">Home</a></li>
           <li><a href="#blogs" class="nav-link">Blogs</a></li>
+          <li><a href="#reviews" class="nav-link">Review</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </div>
     </nav>
 
-    <!-- Blog Section -->
-    <section id="blogs" class="section">
+  
+    
+    <section id="blogs" class=parent-container>
       <div class="container">
-        <h2>Blogs</h2>
+        
+        <h2 class="blogs-heading">Blogs</h2>
         <div class="filter-buttons">
           <button class="filter-btn active" data-category="all">All</button>
           <button class="filter-btn" data-category="painting">Painting</button>
@@ -41,23 +44,23 @@
             Gardening
           </button>
         </div>
-
+        
         <div class="blog-container-parent">
           <div class="blog-category all">
             <div class="blog-items"></div>
           </div>
           <div class="blog-category painting">
-            <h3>Painting Blog</h3>
+            <h3 class="headings">Painting Blog</h3>
             <div class="blog-items">
               <div class="blog-item blog-card">
-                <img
+                <img class="painting-img"
                   src="/painting-1.jpg"
                   alt="Painting Blog 1"
                   loading="lazy"
                 />
                 <div class="blog-item-content">
-                  <h3>The Beauty of Landscape Painting</h3>
-                  <p>
+                  <h3 class="painting-heading">The Beauty of Landscape Painting</h3>
+                  <p class="description">
                     Discover the art of capturing nature's beauty through
                     landscape painting. Learn essential techniques, color
                     theory, and composition tips that will help you create
@@ -66,134 +69,125 @@
                 </div>
               </div>
               <div class="blog-item blog-card">
-                <img
+                <img class="painting-img"
                   src="/painting-2.jpg"
                   alt="Painting Blog 2"
                   loading="lazy"
                 />
                 <div class="blog-item-content">
-                  <h3>Exploring Abstract Art</h3>
-                  <p>A Journey Through Color and Emotion</p>
+                  <h3 class="painting-heading">Exploring Abstract Art</h3>
+                  <p class="description">A Journey Through Color and Emotion</p>
                 </div>
               </div>
               <div class="blog-item">
-                <img
+                <img class="painting-img"
                   src="/painting-3.jpg"
                   alt="Painting Blog 3"
                   loading="lazy"
                 />
                 <div class="blog-item-content">
-                  <h3>The Art of Watercolor Painting</h3>
-                  <p>Techniques and Tips for Beginners</p>
+                  <h3 class="painting-heading">The Art of Watercolor Painting</h3>
+                  <p class="description">Techniques and Tips for Beginners</p>
                 </div>
               </div>
               <div class="blog-item">
-                <img
-                  src="//painting-4.jpg"
+                <img class="painting-img"
+                  src="/painting-4.jpg"
                   alt="Painting Blog 4"
                   loading="lazy"
                 />
                 <div class="blog-item-content">
-                  <h3>Portrait Painting</h3>
-                  <p>Capturing the Essence of the Human Face</p>
+                  <h3 class="painting-heading">Portrait Painting</h3>
+                  <p class="description">Capturing the Essence of the Human Face</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="blog-category gaming">
-            <h3>Gaming Blog</h3>
+            <h3 class="headings">Gaming Blog</h3>
             <div class="blog-items">
               <div class="blog-item">
-                <img
-                  src="/game-1.jpg"
-                  alt="Gaming Blog 1"
-                  loading="lazy"
-                />
+                <img src="/game-1.jpg" alt="Gaming Blog 1" loading="lazy" />
                 <div class="blog-item-content">
-                  <h3>The Evolution of Gaming</h3>
-                  <p>From Arcade to Virtual Reality</p>
+                  <h3 class="game-heading">The Evolution of Gaming</h3>
+                  <p class="description">From Arcade to Virtual Reality</p>
                 </div>
               </div>
               <div class="blog-item">
-                <img
-                  src="/game-2.jpg"
-                  alt="Gaming Blog 2"
-                  loading="lazy"
-                />
+                <img src="/game-2.jpg" alt="Gaming Blog 2" loading="lazy" />
                 <div class="blog-item-content">
-                  <h3>Top 10 Must-Play Games of 2024</h3>
-                </div>
+                  <h3 class="game-heading">Top 10 Must-Play Games of 2024</h3>
+                  <p class="description">Can It Be Therapeutic?</p>
+               </div>
               </div>
               <div class="blog-item">
-                <img
-                  src="/game-3.jpg"
-                  alt="Gaming Blog 3"
-                  loading="lazy"
-                />
+                <img src="/game-3.jpg" alt="Gaming Blog 3" loading="lazy" />
                 <div class="blog-item-content">
                   <h3>The Impact of Gaming on Mental Health</h3>
-                  <p>Can It Be Therapeutic?</p>
+                  <p class="description">Can It Be Therapeutic?</p>
                 </div>
               </div>
               <div class="blog-item">
-                <img
-                  src="/game-4.jpg"
-                  alt="Gaming Blog 4"
-                  loading="lazy"
-                />
+                <img src="/game-4.jpg" alt="Gaming Blog 4" loading="lazy" />
                 <div class="blog-item-content">
-                  <h3>The Rise of Esports</h3>
-                  <p>A Look at Competitive Gaming</p>
+                  <h3 class="game-heading">The Rise of Esports</h3>
+                  <p class="description">A Look at Competitive Gaming</p>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="blog-category gardening">
-            <h3>Gardening Blog</h3>
+
+            <h3 class="headings">Gardening Blog</h3>
             <div class="blog-items">
               <div class="blog-item gardening">
                 <img
+                class="garden-img"
                   src="/garden-1.jpg"
                   alt="Gardening Blog 1"
                   loading="lazy"
                 />
                 <div class="blog-item-content">
-                  <h3>Starting Your First Garden</h3>
-                  <p>A Beginner’s Guide</p>
+                  <h3 class="description-heading">Starting Your First Garden</h3>
+                  <p class="description">A Beginner’s Guide</p>
                 </div>
               </div>
               <div class="blog-item gardening">
                 <img
+                class="garden-img"
                   src="/garden-2.jpg"
                   alt="Gardening Blog 2"
                   loading="lazy"
                 />
                 <div class="blog-item-content">
-                  <h3>Seasonal Gardening Tips</h3>
-                  <p>What to Plant and When</p>
+                  <h3 class="description-heading">Seasonal Gardening Tips</h3>
+                  <p class="description">What to Plant and When</p>
                 </div>
               </div>
               <div class="blog-item gardening">
                 <img
+                class="garden-img"
                   src="/garden-3.jpg"
                   alt="Gardening Blog 3"
                   loading="lazy"
                 />
                 <div class="blog-item-content">
-                  <h3>Organic Gardening</h3>
-                  <p>Growing Naturally Without Chemicals</p>
+                  <h3 class="description-heading">Organic Gardening</h3>
+                  <p class="description">Growing Naturally Without Chemicals</p>
                 </div>
               </div>
               <div class="blog-item gardening">
                 <img
+                class="garden-img"
                   src="/garden-4.jpg"
                   alt="Gardening Blog 4"
                   loading="lazy"
                 />
                 <div class="blog-item-content">
-                  <h3>Indoor Gardening</h3>
-                  <p>How to Grow a Green Oasis at Home</p>
+                  <h3 class="description-heading">Indoor Gardening</h3>
+                  <p class="description">How to Grow a Green Oasis at Home</p>
                 </div>
               </div>
             </div>
@@ -202,20 +196,79 @@
       </div>
     </section>
 
-    <section id="blogs" class="section">
-      <div class="container">
-        <h2>Reviews</h2>
+    <!-- Remove the duplicate reviews section and modify the existing one -->
+    <section id="reviews" class=parent-container> 
+      <div class="container" id="reviews">
+        <h2 class="blogs-heading">Reviews</h2>
+        <div class="reviews-container">
+          <!-- Example of a static review card -->
+          <div class="review-card">
+            <img
+              class="review-avatar"
+              src="https://media.licdn.com/dms/image/v2/D4D03AQHr-mOYiKDW9g/profile-displayphoto-shrink_200_200/B4DZPbmEPjGoAY-/0/1734556010861?e=1740614400&v=beta&t=HoMj_hn6T5oamkiuFKudlYal6A5vFlD7FnjOrpTvg84"
+              alt="User Avatar"
+            />
+            <div class="review-content">
+              <h3>Haseeb Usman</h3>
+              <p class="review-date">December 28, 2024</p>
+              <p class="review-text">
+                I absolutely love this blog! The content is informative and
+                engaging. The variety of hobbies covered here is amazing.
+              </p>
+              <div class="review-rating">
+                <span>Rating: </span>
+                <span class="rating-stars">★★★★★</span>
+              </div>
+            </div>
+          </div>
 
-        <div id="reviews-container" class="reviews-container">
+          <div class="review-card">
+            <img
+              class="review-avatar"
+              src="/zohaib.png"
+              alt="User Avatar"
+            />
+            <div class="review-content">
+              <h3>Zohaib Amir</h3>
+              <p class="review-date">December 27, 2024</p>
+              <p class="review-text">
+                The tutorials are excellent and easy to follow. I've learned so
+                much about gardening through this platform!
+              </p>
+              <div class="review-rating">
+                <span>Rating: </span>
+                <span class="rating-stars">★★★★☆</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <img
+              class="review-avatar"
+              src="zahid.png"
+              alt="User Avatar"
+            />
+            <div class="review-content">
+              <h3>Muhammad Zahid Latif</h3>
+              <p class="review-date">December 26, 2024</p>
+              <p class="review-text">
+                Great community and wonderful insights into various hobbies. The
+                painting section is particularly helpful!
+              </p>
+              <div class="review-rating">
+                <span>Rating: </span>
+                <span class="rating-stars">★★★★★</span>
+              </div>
+            </div>
+          </div>
           
         </div>
       </div>
     </section>
 
-  
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About us</h2>
+    <section id="about" class="parent-about-container">
+      <div class="about-container">
+        <h2 class="blogs-heading">About us</h2>
         <div class="about-content">
           <img
             class="about_image"
@@ -242,10 +295,9 @@
       </div>
     </section>
 
-    
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact Me</h2>
+    <section id="contact" class="blogs-heading">
+      <h3 class="contact-me">Contact Me</h3>
+      <div class="contact-container">
         <form id="contact-form">
           <input type="text" id="name" placeholder="Your Name" required />
           <input type="email" id="email" placeholder="Your Email" required />
@@ -261,13 +313,10 @@
       </div>
     </section>
 
-  
     <footer class="footer">
       <div class="container">
         <p>&copy; 2024 My Hobby Blog. All Rights Reserved.</p>
       </div>
     </footer>
-
-    
   </body>
 </html>
