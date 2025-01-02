@@ -737,7 +737,7 @@
   border-radius: 15px;
  
   border-radius: 10px;
-  border-left: 4px solid var(--primary-color);
+  /* border-left: 4px solid var(--primary-color); */
   transition: transform 0.3s ease;
 }
 
@@ -751,7 +751,7 @@
   padding: 20px;
   /* background: rgba(255, 255, 255, 0.9); */
   border-radius: 10px;
-  border-right: 4px solid var(--primary-color);
+  /* border-right: 4px solid var(--primary-color); */
 }
 
 @media (max-width: 992px) {
